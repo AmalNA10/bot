@@ -1,4 +1,8 @@
 # config.py
+from dotenv import load_dotenv
+import os
 
-BOT_TOKEN = "7574230947:AAEnp0kLSIowEPrua5QFwywy--dU0CEI1Cg"
-ADMIN_ID = "@iam_invincibl_e"
+load_dotenv()
+
+BOT_TOKEN = os.getenv("BOT_TOKEN")
+ADMIN_ID = os.getenv("ADMIN_ID")
